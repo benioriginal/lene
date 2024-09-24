@@ -57,11 +57,11 @@
       });
 
       document.getElementById("increment").addEventListener("click", () => {
-        if (audioIndex < 134) {
+        if (audioIndex < 344) {
           audioIndex++;
           audio.src = `${audioIndex}.mp3`;
           audio.play();
-          if (audioIndex === 134) {
+          if (audioIndex === 344) {
             document.getElementById("increment").disabled = true;
           }
           if (audioIndex > 0) {
@@ -78,7 +78,7 @@
           if (audioIndex === 0) {
             document.getElementById("decrement").disabled = true;
           }
-          if (audioIndex < 134) {
+          if (audioIndex < 344) {
             document.getElementById("increment").disabled = false;
           }
         }
